@@ -1,0 +1,10 @@
+C:\Users\siddarth.s\source\repos\XMLGeneration\XML\bin\Debug\XML.exe.config
+C:\Users\siddarth.s\source\repos\XMLGeneration\XML\bin\Debug\XML.exe
+C:\Users\siddarth.s\source\repos\XMLGeneration\XML\bin\Debug\XML.pdb
+C:\Users\siddarth.s\source\repos\XMLGeneration\XML\obj\Debug\XML.csproj.AssemblyReference.cache
+C:\Users\siddarth.s\source\repos\XMLGeneration\XML\obj\Debug\XML.Form1.resources
+C:\Users\siddarth.s\source\repos\XMLGeneration\XML\obj\Debug\XML.Properties.Resources.resources
+C:\Users\siddarth.s\source\repos\XMLGeneration\XML\obj\Debug\XML.csproj.GenerateResource.cache
+C:\Users\siddarth.s\source\repos\XMLGeneration\XML\obj\Debug\XML.csproj.CoreCompileInputs.cache
+C:\Users\siddarth.s\source\repos\XMLGeneration\XML\obj\Debug\XML.exe
+C:\Users\siddarth.s\source\repos\XMLGeneration\XML\obj\Debug\XML.pdb

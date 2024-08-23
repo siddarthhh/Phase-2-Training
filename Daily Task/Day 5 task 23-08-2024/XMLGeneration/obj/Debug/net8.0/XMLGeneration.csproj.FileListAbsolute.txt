@@ -1,0 +1,14 @@
+C:\Users\siddarth.s\source\repos\XMLGeneration\XMLGeneration\obj\Debug\net8.0\XMLGeneration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\siddarth.s\source\repos\XMLGeneration\XMLGeneration\obj\Debug\net8.0\XMLGeneration.AssemblyInfoInputs.cache
+C:\Users\siddarth.s\source\repos\XMLGeneration\XMLGeneration\obj\Debug\net8.0\XMLGeneration.AssemblyInfo.cs
+C:\Users\siddarth.s\source\repos\XMLGeneration\XMLGeneration\obj\Debug\net8.0\XMLGeneration.csproj.CoreCompileInputs.cache
+C:\Users\siddarth.s\source\repos\XMLGeneration\XMLGeneration\bin\Debug\net8.0\XMLGeneration.exe
+C:\Users\siddarth.s\source\repos\XMLGeneration\XMLGeneration\bin\Debug\net8.0\XMLGeneration.deps.json
+C:\Users\siddarth.s\source\repos\XMLGeneration\XMLGeneration\bin\Debug\net8.0\XMLGeneration.runtimeconfig.json
+C:\Users\siddarth.s\source\repos\XMLGeneration\XMLGeneration\bin\Debug\net8.0\XMLGeneration.dll
+C:\Users\siddarth.s\source\repos\XMLGeneration\XMLGeneration\bin\Debug\net8.0\XMLGeneration.pdb
+C:\Users\siddarth.s\source\repos\XMLGeneration\XMLGeneration\obj\Debug\net8.0\XMLGeneration.dll
+C:\Users\siddarth.s\source\repos\XMLGeneration\XMLGeneration\obj\Debug\net8.0\refint\XMLGeneration.dll
+C:\Users\siddarth.s\source\repos\XMLGeneration\XMLGeneration\obj\Debug\net8.0\XMLGeneration.pdb
+C:\Users\siddarth.s\source\repos\XMLGeneration\XMLGeneration\obj\Debug\net8.0\XMLGeneration.genruntimeconfig.cache
+C:\Users\siddarth.s\source\repos\XMLGeneration\XMLGeneration\obj\Debug\net8.0\ref\XMLGeneration.dll
