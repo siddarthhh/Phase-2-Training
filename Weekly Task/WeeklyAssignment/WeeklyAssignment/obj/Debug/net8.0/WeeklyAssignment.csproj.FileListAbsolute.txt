@@ -1,0 +1,14 @@
+C:\Users\siddarth.s\source\repos\WeeklyAssignment\WeeklyAssignment\bin\Debug\net8.0\WeeklyAssignment.exe
+C:\Users\siddarth.s\source\repos\WeeklyAssignment\WeeklyAssignment\bin\Debug\net8.0\WeeklyAssignment.deps.json
+C:\Users\siddarth.s\source\repos\WeeklyAssignment\WeeklyAssignment\bin\Debug\net8.0\WeeklyAssignment.runtimeconfig.json
+C:\Users\siddarth.s\source\repos\WeeklyAssignment\WeeklyAssignment\bin\Debug\net8.0\WeeklyAssignment.dll
+C:\Users\siddarth.s\source\repos\WeeklyAssignment\WeeklyAssignment\bin\Debug\net8.0\WeeklyAssignment.pdb
+C:\Users\siddarth.s\source\repos\WeeklyAssignment\WeeklyAssignment\obj\Debug\net8.0\WeeklyAssignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\siddarth.s\source\repos\WeeklyAssignment\WeeklyAssignment\obj\Debug\net8.0\WeeklyAssignment.AssemblyInfoInputs.cache
+C:\Users\siddarth.s\source\repos\WeeklyAssignment\WeeklyAssignment\obj\Debug\net8.0\WeeklyAssignment.AssemblyInfo.cs
+C:\Users\siddarth.s\source\repos\WeeklyAssignment\WeeklyAssignment\obj\Debug\net8.0\WeeklyAssignment.csproj.CoreCompileInputs.cache
+C:\Users\siddarth.s\source\repos\WeeklyAssignment\WeeklyAssignment\obj\Debug\net8.0\WeeklyAssignment.dll
+C:\Users\siddarth.s\source\repos\WeeklyAssignment\WeeklyAssignment\obj\Debug\net8.0\refint\WeeklyAssignment.dll
+C:\Users\siddarth.s\source\repos\WeeklyAssignment\WeeklyAssignment\obj\Debug\net8.0\WeeklyAssignment.pdb
+C:\Users\siddarth.s\source\repos\WeeklyAssignment\WeeklyAssignment\obj\Debug\net8.0\WeeklyAssignment.genruntimeconfig.cache
+C:\Users\siddarth.s\source\repos\WeeklyAssignment\WeeklyAssignment\obj\Debug\net8.0\ref\WeeklyAssignment.dll
