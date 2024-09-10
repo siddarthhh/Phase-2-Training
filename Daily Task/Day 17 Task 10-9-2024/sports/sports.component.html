@@ -1,0 +1,80 @@
+<div class="table-container mx-auto p-3" style="max-width: 1000px;">
+<h1>Car Showroom</h1>
+    <table class="table table-hover table-bordered table-responsive text-center align-middle shadow-lg">
+        <thead class="table-dark">
+            <tr>
+                <th class="p-3">Car ID</th>
+                <th class="p-3">Car Name</th>
+                <th class="p-3">Brand</th>
+                <th class="p-3">Car Price</th>
+                <th class="p-3">Stock</th>
+                <th class="p-3">Image</th>
+                <th class="p-3">Rating</th>
+                <th class="p-3">Action</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let car of lstcar; let i = index" class="align-middle">
+                <td class="p-3">{{car.carid}}</td>
+                <td class="p-3 fw-bold text-primary">{{car.carname}}</td>
+                <td class="p-3 fw-bold text-primary">{{car.carbrand}}</td>
+                <td class="p-3 text-success">Rs: {{car.carprice | number : '1.2-2'}}</td>
+                <td class="p-3 fw-bold"
+                    [ngClass]="{'text-success': car.carstock > 0, 'text-danger': car.carstock <= 0}">
+                    {{ car.carstock > 0 ? 'In Stock (' + car.carstock + ')' : 'Out of Stock' }}
+                </td>
+                <td class="p-3">
+                    <img [src]="car.carimg" class="img-fluid rounded shadow-sm" style="border: 2px solid #ddd;"
+                        width="200px" alt="{{car.carname}}" />
+                </td>
+                <td class="p-3 fw-bold"
+                [ngClass]="{
+                    'text-success': car.rating >= 4,
+                    'text-warning': car.rating >= 3 && car.rating < 4,
+                    'text-danger': car.rating < 3
+                }">
+                {{ car.rating }} / 5
+            </td>
+                <td class="p-3">
+                    <div class="btn-group" role="group" aria-label="Actions">
+                        <button (click)="addToCart(car)" class="btn btn-primary" [disabled]="car.carstock <= 0">
+                            Add to Cart
+                        </button>
+                        <button (click)="buyNow(car)" class="btn btn-success ms-2" [disabled]="car.carstock <= 0">
+                            Buy Now
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+      <div class="cart mt-4 p-3 border rounded shadow-sm">
+        <h4 class="text-center mb-3">Shopping Cart</h4>
+        <table class="table table-striped text-center align-middle">
+            <thead>
+                <tr class="table-secondary">
+                    <th>Car Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of cart">
+                    <td>{{ item.carname }}</td>
+                    <td>Rs: {{ item.carprice | number : '1.2-2' }}</td>
+                    <td>{{ item.quantity }}</td>
+                    <td>Rs: {{ item.carprice * item.quantity | number : '1.2-2' }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <p class="fw-bold">Total: Rs: {{ getTotal() | number : '1.2-2' }}</p>
+            <button (click)="buyAll()" class="btn btn-lg btn-success" [disabled]="cart.length === 0">
+                Buy All
+            </button>
+        </div>
+        <p *ngIf="cart.length === 0" class="text-center text-muted mt-3">Your cart is empty.</p>
+    </div>
+</div>
