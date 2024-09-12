@@ -1,0 +1,41 @@
+<!-- Title with improved styling -->
+<p class="h3 text-center my-4 fw-bold">Company List</p>
+
+<!-- Add Company Button -->
+<div class="d-flex justify-content-between mb-4">
+  <button class="btn btn-outline-primary" (click)="addCompany()">
+    <i class="bi bi-plus-circle me-2"></i>Add Company
+  </button>
+</div>
+
+<!-- Company Table -->
+<table class="table table-bordered table-hover align-middle">
+  <thead class="table-secondary">
+    <tr>
+      <th class="text-center">ID</th>
+      <th class="text-center">Name</th>
+      <th class="text-center">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let company of companies" class="table-light">
+      <td class="text-center">{{ company.companyId }}</td>
+      <td class="text-center">{{ company.companyName }}</td>
+      <td class="text-center">
+        <button class="btn btn-outline-info btn-sm me-2" (click)="viewDetails(company.companyId)">
+          <i class="bi bi-eye"></i> Details
+        </button>
+        <button class="btn btn-outline-warning btn-sm me-2" (click)="updateCompany(company.companyId)">
+          <i class="bi bi-pencil-square"></i> Update
+        </button>
+        <button class="btn btn-outline-danger btn-sm" (click)="deleteCompany(company.companyId)">
+          <i class="bi bi-trash"></i> Delete
+        </button>
+      </td>
+    </tr>
+    <!-- Message when no companies are available -->
+    <tr *ngIf="companies.length === 0">
+      <td colspan="3" class="text-center text-muted">No companies found.</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,14 @@
+<!-- Title -->
+<p class="h3 text-center my-4 fw-bold">Company Details</p>
+
+<!-- Company Details Card -->
+<div *ngIf="company?.companyId" class="card w-50 mx-auto shadow p-4 rounded">
+  <div class="card-body">
+    <p class="card-text">
+      <strong>Company ID:</strong> <span class="text-muted">{{ company?.companyId }}</span>
+    </p>
+    <p class="card-text">
+      <strong>Company Name:</strong> <span class="text-muted">{{ company?.companyName }}</span>
+    </p>
+  </div>
+</div>

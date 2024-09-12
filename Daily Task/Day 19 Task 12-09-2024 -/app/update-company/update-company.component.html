@@ -1,0 +1,20 @@
+<!-- Title -->
+<p class="h3 text-center my-4 fw-bold">Update Organization</p>
+
+<!-- Update Organization Form -->
+<form (ngSubmit)="onSubmit()" class="w-50 mx-auto p-4 border rounded shadow-sm">
+    <!-- Org ID Field -->
+    <div class="form-group mb-3">
+        <label for="companyId" class="form-label fw-semibold">Org-Id</label>
+        <input type="number" id="companyId" class="form-control" name="companyId" [(ngModel)]="company.companyId" readonly />
+    </div>
+
+    <!-- Organization Name Field -->
+    <div class="form-group mb-4">
+        <label for="companyName" class="form-label fw-semibold">Organization Name</label>
+        <input type="text" id="companyName" class="form-control" name="companyName" [(ngModel)]="company.companyName" />
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary w-100">Update Organization</button>
+</form>
