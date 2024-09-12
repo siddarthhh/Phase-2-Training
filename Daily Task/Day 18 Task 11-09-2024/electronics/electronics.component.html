@@ -1,0 +1,83 @@
+<h1 class="text-center my-4">Sidd Electronics</h1>
+
+<!-- Category Filter Dropdown -->
+<select [(ngModel)]="val">
+  <option value="All">All</option>
+  <option *ngFor="let elec of getUniqueCategory()">{{elec}}</option>
+</select>
+
+<!-- Switch case for images based on selected category -->
+<div [ngSwitch]="val">
+  <div *ngSwitchCase="'Mobile'"><img src="../../../public/assets/mobile.jfif" width="100px"></div>
+  <div *ngSwitchCase="'TV'"><img src="../../../public/assets/tv.jfif" width="100px"></div>
+  <div *ngSwitchCase="'Laptop'"><img src="../../../public/assets/laptop.jfif" width="100px"></div>
+  <div *ngSwitchCase="'Game Console'"><img src="../../../public/assets/gameconsole.webp" width="100px"></div>
+  <div *ngSwitchCase="'All'"><img src="../../../public/assets/all.jfif" width="100px"></div>
+  <div *ngSwitchDefault></div>
+</div>
+
+<!-- Product Listing -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let elec of filteredElecList()">
+      <div class="card mb-4 shadow-sm custom-hover">
+        <img [src]="elec.Eimg" class="card-img-top img-fluid rounded" alt="{{elec.Name}}" style="border: 1px solid #ddd;">
+        <div class="card-body">
+          <h5 class="card-title">{{elec.Name}}</h5>
+          <p class="card-text">
+            <strong>Category:</strong> {{elec.Category}}<br>
+            <strong>Price:</strong> ₹{{elec.Price}}<br>
+            <strong *ngIf="elec.Stock > 0">Stock:</strong> {{elec.Stock}} units<br>
+            <strong *ngIf="elec.Stock === 0">Out of Stock</strong>
+          </p>
+          <div *ngIf="elec.Stock > 0" class="card-footer text-center">
+            <button class="btn btn-outline-primary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add Product Form -->
+<h3 class="text-center mt-5">Add New Product</h3>
+<form #productForm="ngForm" (ngSubmit)="onSubmit(productForm)">
+  <div class="form-group">
+    <label for="name">Product Name</label>
+    <input type="text" id="name" class="form-control" name="name" ngModel required>
+    <div *ngIf="productForm.submitted && productForm.controls['name']?.invalid" class="text-danger">
+      Product name is required.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="price">Price</label>
+    <input type="number" id="price" class="form-control" name="price" ngModel required min="100" max="500000">
+    <div *ngIf="productForm.submitted && productForm.controls['price']?.invalid" class="text-danger">
+      Price should be between 100 and 500000.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="stock">Stock</label>
+    <input type="number" id="stock" class="form-control" name="stock" ngModel required min="0">
+    <div *ngIf="productForm.submitted && productForm.controls['stock']?.invalid" class="text-danger">
+      Stock must be a non-negative number.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="category">Category</label>
+    <select id="category" class="form-control" name="category" ngModel required>
+      <option value="Mobile">Mobile</option>
+      <option value="TV">TV</option>
+      <option value="Laptop">Laptop</option>
+      <option value="Game Console">Game Console</option>
+    </select>
+    <div *ngIf="productForm.submitted && productForm.controls['category']?.invalid" class="text-danger">
+      Category is required.
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary mt-3">Add Product</button>
+</form>
